@@ -1,51 +1,45 @@
-import { InlineCode } from "@/once-ui/components";
-
 const person = {
-  firstName: "Saumya",
-  lastName: "Gupta",
+  firstName: "Nitesh",
+  lastName: "Kumar",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Human Resources Professional",
+  role: "Data Management Executive",
   avatar: "/images/avatar.jpg",
-  location: "Asia/Kolkata",
+  location: "Asia/Kolkata", // India timezone
   languages: ["English", "Hindi"],
-  contact: "6393148008 | saumyag532@gmail.com"
 };
 
 const newsletter = {
-  display: true,
+  display: false,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
     <>
-      I occasionally write about human resources, recruitment strategies, and share thoughts on the 
-      intersection of people management and organizational development.
+      I occasionally write about data management, Google Sheets automation, and business process optimization.
     </>
   ),
 };
 
 const social = [
-  // Links are automatically displayed.
-  // Import new icons in /once-ui/icons.ts
   {
-    name: "GitHub",
-    icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    name: "Email",
+    icon: "email",
+    link: "mailto:nit.chandra11@gmail.com",
+  },
+  {
+    name: "Phone",
+    icon: "phone",
+    link: "tel:9140921513",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "linkedin.com/in/saumya-gupta-3b1309243",
+    link: "https://www.linkedin.com/",
   },
   {
-    name: "X",
-    icon: "x",
-    link: "",
-  },
-  {
-    name: "Email",
-    icon: "email",
-    link: "mailto:saumyag532@gmail.com",
+    name: "GitHub",
+    icon: "github",
+    link: "https://github.com/",
   },
 ];
 
@@ -53,11 +47,11 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Human Resources Professional</>,
+  headline: <>Data Management Executive</>,
   subline: (
     <>
-      I'm Saumya, a Human Resources professional with experience in 
-      <br /> recruitment, employee management, and HR operations.
+      I'm Nitesh, a Data Management Executive with expertise in Google Sheets, 
+      <br /> process automation, and business intelligence solutions.
     </>
   ),
 };
@@ -65,7 +59,7 @@ const home = {
 const about = {
   label: "About",
   title: "About me",
-  description: `Meet ${person.name}, ${person.role} from ${person.location}`,
+  description: `Meet ${person.name}, ${person.role} from Faridabad, Haryana`,
   tableOfContent: {
     display: true,
     subItems: false,
@@ -82,9 +76,9 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Saumya is a Human Resources professional with a passion for recruitment, employee management, 
-        and organizational development. Her work spans talent acquisition, HR operations, and 
-        implementing effective HR policies.
+        To work with an organization which provides me the opportunity to improve my skills 
+        and grow along with the organization to become knowledgeable. Experienced in data management,
+        process automation, and creating business intelligence solutions using Google Workspace tools.
       </>
     ),
   },
@@ -93,46 +87,41 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-        company: "GAO Tek.inc",
-        timeframe: "27 May 2024 - 30 August 2024",
-        role: "Human Resources Intern",
+        company: "OasisStudio",
+        timeframe: "03/2023 - Present",
+        role: "Data Management Executive",
         achievements: [
           <>
-            Recruited and sourced candidates through job boards, social media, and headhunting.
-          </>,
-          <>
-            Posted job openings on various recruitment platforms and university portals.
-          </>,
-          <>
-            Screened resumes and applications, scheduled interviews for senior HR staff.
-          </>,
-          <>
-            Managed communication through emails and LinkedIn with applicants and followed up with candidates.
+            Base on Interior Designer of Kitchen, Wardrobe, TV unit etc.
           </>,
         ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "HR Project",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
-        company: "MARS EXPLORATION PVT. LTD",
-        timeframe: "1 July - 7 August 2022",
-        role: "Human Resource Intern",
+        company: "Bizgurukul Pvt. Ltd",
+        timeframe: "12/2021 - 02/2023",
+        role: "Data Management Executive",
         achievements: [
           <>
-            Updated internal employee databases, performed data entry, and filed HR documents.
+            Created IMS (Inventory Management Sheet), PMS for Production Planning, Advanced FMS, and Advanced Checklist.
           </>,
           <>
-            Screened resumes, initiated background checks on shortlisted candidates.
+            Developed WhatsApp Reminder & FMS Push Notification on WhatsApp, Pending Task Notification on WhatsApp & Telegram.
           </>,
           <>
-            Provided recommendations to improve HR policies and completed tasks assigned by senior HR.
+            Created Dashboards on Looker Studio and updated on Google Sites with knowledge of App Site and App Script.
+          </>,
+          <>
+            Managed process sheets & workflow of the company, Performance reports of employees.
+          </>,
+          <>
+            Developed customized Google Sheets for process management with different features: Advanced Checklist, PMS, FMS, Attendance Sheet.
+          </>,
+          <>
+            Oversaw MIS of Staff, Delegation Sheet and Projects.
+          </>,
+          <>
+            Maintained and updated all details in sheets.
           </>,
         ],
         images: [],
@@ -144,12 +133,20 @@ const about = {
     title: "Education",
     institutions: [
       {
-        name: "United Institute of Management",
-        description: <>BBA (2022-2025)</>,
+        name: "J S University, Shikohabad, Uttar Pradesh",
+        description: <>B.Tech in Computer Science & Engineering (08/2021 - Present)</>,
       },
       {
-        name: "Kaushambi Public School",
-        description: <>12th Grade (70%)</>,
+        name: "J S University, Shikohabad, Uttar Pradesh",
+        description: <>Diploma in Computer Science & Engineering (06/2018 - 06/2021)</>,
+      },
+      {
+        name: "SK. Public School, Lohri Robertsganj, Sonebhadra (U.P)",
+        description: <>Higher Secondary (03/2017 - 03/2018)</>,
+      },
+      {
+        name: "Online Skill Development Courses",
+        description: <>Various professional development courses</>,
       },
     ],
   },
@@ -158,37 +155,24 @@ const about = {
     title: "Skills",
     skills: [
       {
-        title: "Hard Skills",
+        title: "Technical Skills",
         description: (
           <>
-            Knowledge about Adult Learning Principles, ADDIE Model, Basic SQL, HTML, Research skills, 
-            MS-Excel, MS-Office, PowerPoint, Market Research
+            Google Workspace (G Suite), Google Sheets Advanced Formulas, JavaScript, Python, 
+            Google Sites, PowerPoint, Word, Dashboard creation (Looker Studio), App Script
           </>
         ),
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Skills image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
         title: "Soft Skills",
         description: (
           <>
-            Communication skills, Teamwork, Leadership skills, Adaptability, Positive attitude
+            Independent problem-solving, Teamwork, Eagerness to learn, Process management, 
+            Performance reporting, Data management
           </>
         ),
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Skills image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
     ],
   },
@@ -196,49 +180,54 @@ const about = {
 
 const blog = {
   label: "Blog",
-  title: "Writing about HR and recruitment...",
+  title: "Writing about data management...",
   description: `Read what ${person.name} has been up to recently`,
-  // Create new blog posts by adding a new .mdx file to app/blog/posts
 };
 
 const work = {
   label: "Work",
   title: "My projects",
-  description: `HR projects and achievements by ${person.name}`,
-  // Create new project pages by adding a new .mdx file to app/blog/posts
+  description: `Data management projects by ${person.name}`,
 };
 
 const gallery = {
-  label: "Achievements",
-  title: "Certifications & Awards",
-  description: `Achievements and certifications earned by ${person.name}`,
-  achievements: [
-    "MS-Office course certificate",
-    "Media planning and advertising",
-    "Digital Marketing course",
-    "Currently pursuing Excel certification course",
-    "Market Research"
-  ],
-  // Images from https://pexels.com
+  label: "Gallery",
+  title: "My work samples",
+  description: `Data visualization and dashboard samples by ${person.name}`,
   images: [
     {
-      src: "/images/gallery/img-01.jpg",
-      alt: "certificate",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-02.jpg",
-      alt: "certificate",
+      src: "/images/gallery/img-06.jpeg",
+      alt: "Dashboard sample",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/img-03.jpg",
-      alt: "certificate",
-      orientation: "vertical",
+      src: "/images/gallery/img-07.jpeg",
+      alt: "Google Sheet automation",
+      orientation: "horizontal",
     },
     {
-      src: "/images/gallery/img-04.jpg",
-      alt: "certificate",
+      src: "/images/gallery/img-08.jpeg",
+      alt: "Looker Studio visualization",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/img-09.jpeg",
+      alt: "Process management",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/img-10.jpeg",
+      alt: "App Script automation",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/img-11.jpeg",
+      alt: "App Script automation",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/img-02.jpg",
+      alt: "App Script automation",
       orientation: "horizontal",
     },
   ],
